@@ -52,4 +52,4 @@ export function FavoriteContextProvider(props){
 
 
 
-export default FavoriteContextProvider;
+export default FavoriteContext;

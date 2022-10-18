@@ -8,7 +8,7 @@ function NewMeetupspage() {
 
     function addMeetupHandler(meetupData){
         fetch(
-            'https://myapp-19ed3-default-rtdb.firebaseio.com/meetup.json',
+            'https://react-app-80501-default-rtdb.firebaseio.com/meetup.json',
             {
               method: 'POST',
               body: JSON.stringify(meetupData),
@@ -23,10 +23,15 @@ function NewMeetupspage() {
     }
     
     return(
+        <>
+        <div>
+            <h1>Helps Us Expand Our View of The World<span style={{fontSize: "40px", color:"#77002e"}}> Add New Meetup </span> </h1>
+        </div>
         <section>
-            <h1>Add New Meetup</h1>
+            
             <NewMeetUpForm onAddMeetup= {addMeetupHandler}/>
         </section>
+        </>
     );
     }
     
