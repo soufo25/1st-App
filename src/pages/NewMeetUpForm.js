@@ -1,9 +1,18 @@
 import React, { useRef } from 'react';
 import Card from '../ui/Card';
+import {useNavigate} from "react-router-dom";
 import classes from './NewMeetUpForm.module.css';
 
 
+
 function NewMeetUpForm(props){
+    const Navigate = useNavigate();
+    const handleBack = (e) => {
+        e.preventDefault();
+        Navigate("/all-meetup")
+    
+    
+    }
 
    const titleInputRef = useRef();
    const imageInputRef = useRef();
@@ -48,6 +57,7 @@ function NewMeetUpForm(props){
                 </div>
                 <div className={classes.actions}>
                     <button>Add Meetup</button>
+                    <button onClick= {handleBack}>Back</button>
                 </div>
             </form>
         </Card>

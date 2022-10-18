@@ -19,8 +19,8 @@ function App() {
     <Layout>
       <Routes>
         <Route path = '/' element = {<Login />}/>
-      <Route path ='/all-meetup' element = {<RequireAuth>
-      <AllMeetupsPage /> </RequireAuth>}/>
+      <Route path ='/all-meetup' element = 
+      {<AllMeetupsPage />}/>
       <Route path = '/new-meetup' element = {<RequireAuth><NewMeetupspage /></RequireAuth>}/>
       <Route path= '/favorites' element = {<RequireAuth><FavoritesPage /></RequireAuth>}/>
       </Routes>

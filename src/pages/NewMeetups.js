@@ -17,7 +17,7 @@ function NewMeetupspage() {
               }
             }
         ).then(() => { 
-            navigate('/');
+            navigate('/all-meetup');
 
         });
     }
